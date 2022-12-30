@@ -36,7 +36,8 @@ ul {
     min-height: 100vh;
     display: block;
     position: fixed;
-    left: 270px;
+    /* width: 75%; */
+    left: 331px;   
     top: 0;
     right: 0;
     z-index: 0;
@@ -170,4 +171,9 @@ ul {
 
 .aside .nav li a i {
     margin-right: 15px;
+}
+
+/* Home Section */
+.home .home-img img {
+    height: 400px;
 }
