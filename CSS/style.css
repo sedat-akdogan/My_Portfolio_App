@@ -358,3 +358,14 @@ h3.my-profession {
     color: var(--text-black-700);
 }
 
+.about .about-content .personal-info {
+    flex: 0 0 50%;
+    max-width: 45%; 
+    margin-top: 40px;
+}
+
+.about .about-content .skills {
+    flex: 0 0 50%;
+    max-width: 45%;   
+    margin-top: 40px;
+}
