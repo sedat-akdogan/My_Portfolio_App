@@ -66,6 +66,7 @@ ul {
 .section-title {
     flex: 0 0 100%;
     max-width: 100%;
+    /* margin-bottom: 60px; there is a problem over here  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 }
 
 .sectin-title h2 {
@@ -82,7 +83,7 @@ ul {
     background-color: var(--skin-color);
     position: absolute;
     top: 100%;
-    left: 0;
+    left: 15px;                       /* check this later */
 }
 
 .section-title h2::after {
@@ -92,7 +93,7 @@ ul {
     background-color: var(--skin-color);
     position: absolute;
     top: 100%;
-    left: 0;
+    left: 15px;                      /* check this later */
     margin-top: 8px;
 }
 
@@ -102,6 +103,7 @@ ul {
     margin-left: -15px;
     margin-right: -15px;
     position: relative;
+    margin-bottom: 60px;  /* Check this lateeeeeeeeeeeeeeeeeeeeeeeer */
 }
 
 .btn {
@@ -145,7 +147,7 @@ ul {
 }
 
 .aside .logo a {
-    color: var(--bg-black-900);
+    color: var(--text-black-900);
     font-weight: 700;
     padding: 15px 20px;
     font-size: 30px;
@@ -326,3 +328,33 @@ h3.my-profession {
     height: 300px; 
     width: auto;  
 }
+
+/* About Sectoin ================================================================= */
+
+.about .about-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.about .about-content .about-text {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.about .about-content .about-text h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 700px;
+    color: var(--text-black-900);
+}
+
+.about .about-content .about-text h3 span {
+    color: var(--skin-color);
+}
+
+.about .about-content .about-text p {
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--text-black-700);
+}
+
