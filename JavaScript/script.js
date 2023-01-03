@@ -1,17 +1,18 @@
 // Typing Animation
 
-const typing = new Typed(".typing", {
-    strings: ["", "Web Developer", "", "Coder", "", "Front End Developer"],
+var Typed = new Typed('.typing', {
+    strings: ["Tenacious Programmer", "Principled Frond End Web Developer"],
     typeSpeed: 100,
-    BackSpeed:60,
+    backSpeed: 30,
     loop: true,
-})
+    // startDelay: 500,
+    backDelay: 2000
+});
 
-
-// Aside
+// Aside 
 
 const nav = document.querySelector(".nav");
-nav.List = nav.querySelectorAll("li"),
+navList = nav.querySelectorAll("li"),
 totalNavList = navList.length,
 allSection = document.querySelectorAll(".section"),
 totalSection = allSection.length;
@@ -97,6 +98,7 @@ navTogglerBtn.addEventListener("click", () => {
 
 function asideSectionTogglerBtn()
 {
+
     aside.classList.toggle("open");
     navTogglerBtn.classList.toggle("open");
     for(let i=0; i<totalSection; i++)
