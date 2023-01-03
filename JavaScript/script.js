@@ -45,3 +45,18 @@ function removeBackSection()
         allSection[i].classList.remove("back-section");
     }
 }
+
+function addBackSection(num)
+{
+    allSection[num].classList.add("back-section");
+}
+
+function showSection(element)
+{
+    for(let i=0; i<totalSection; i++)
+    {
+        allSection[i].classList.remove("active");
+    }
+    const target = element.getAttribute("href").split("#")[1];
+    document.querySelector("#" + target).classList.add("active")
+}
