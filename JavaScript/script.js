@@ -37,3 +37,11 @@ for(let i=0; i<totalNavList; i++)
         }
     })
 }
+
+function removeBackSection()
+{
+    for(let i=0; i<totalSection; i++)
+    {
+        allSection[i].classList.remove("back-section");
+    }
+}
