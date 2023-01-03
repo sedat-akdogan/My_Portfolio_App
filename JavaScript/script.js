@@ -76,3 +76,14 @@ function updateNav(element)
     }
 }
 
+// nav toggler button
+
+document.querySelector(".hire-me").addEventListener("click", function()
+{
+    const sectionIndex = this.getAttribute(data-section-index);
+    showSection(this);
+    updateNav(this);
+    removeBackSection();
+    addBackSection(sectionIndex);
+});
+
