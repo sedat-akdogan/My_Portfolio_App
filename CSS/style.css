@@ -49,10 +49,10 @@ ul {
     top: 0;
     right: 0;
     bottom: 0;
-    z-index: 0;
+    z-index: 0; 
     overflow-y: auto;
     overflow-x: hidden;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease; 
 }
 
 .section.back-section {
@@ -160,7 +160,7 @@ ul {
 
 /* Aside Section ===================================================================*/
 .aside {
-    width: 270px;
+    width: 220px;
     background: var(--bg-black-100);
     position: fixed;
     left: 0;
@@ -343,12 +343,24 @@ h3.my-profession {
 }
 
 .home .home-img {
-    flex: 0 0 40%;
-    /* max-width: 40%; */
-    max-width: 20%;
+    flex: 0 0 30%; 
+    max-width: 40%;
+    /* width: 50px;
+    height: 100px; */
     text-align: center;
     position: relative;
-    background: red;
+    /* background: red; */
+}
+
+.home-img::before {
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-top: 10px solid var(--skin-color);
+    border-left: 10px solid var(--skin-color);
+    left: -20px;
+    top: -40px;
 }
 /* check this section later */
 .home-img::after {
@@ -358,26 +370,16 @@ h3.my-profession {
     width: 80px;
     border-bottom: 10px solid var(--skin-color);
     border-right: 10px solid var(--skin-color);
-    right: 20px;
-    bottom: -40px;
-}
-/* check this section later  ----------===============----------------===============*/
-.home-img::before {
-    content: '';
-    position: absolute;
-    height: 80px;
-    width: 80px;
-    border-top: 10px solid var(--skin-color);
-    border-left: 10px solid var(--skin-color);
     right: -20px;
     bottom: -40px;
 }
+/* check this section later  ----------===============----------------===============*/
 
 .home .home-img img {
     margin: auto;
     border-radius: 10px;
-    height: 300px; 
-    width: auto;  
+    height: 400px; 
+    width: 300px;  
 }
 
 /* About Sectoin ================================================================= */
