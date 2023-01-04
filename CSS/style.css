@@ -97,7 +97,7 @@ ul {
 .section-title {
     flex: 0 0 100%;
     max-width: 100%;
-    /* margin-bottom: 60px; there is a problem over here  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+    /* margin-bottom: 60px; */
 }
 
 .sectin-title h2 {
@@ -114,7 +114,7 @@ ul {
     background-color: var(--skin-color);
     position: absolute;
     top: 100%;
-    left: 15px;                       /* check this later */
+    left: 15px;                      
 }
 
 .section-title h2::after {
@@ -124,15 +124,15 @@ ul {
     background-color: var(--skin-color);
     position: absolute;
     top: 100%;
-    left: 15px;                      /* check this later */
+    left: 15px;                    
     margin-top: 8px;
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -15px;
-    margin-right: -15px;
+    /* margin-left: -15px;
+    margin-right: -15px; */
     position: relative;
     margin-bottom: 60px;  /* Check this lateeeeeeeeeeeeeeeeeeeeeeeer */
 }
@@ -152,6 +152,7 @@ ul {
 
 .btn:hover {
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 .shadow-dark {
@@ -362,7 +363,7 @@ h3.my-profession {
     left: -20px;
     top: -40px;
 }
-/* check this section later */
+
 .home-img::after {
     content: '';
     position: absolute;
@@ -377,9 +378,9 @@ h3.my-profession {
 
 .home .home-img img {
     margin: auto;
-    border-radius: 10px;
+    border-radius: 20%;
     height: 400px; 
-    width: 300px;  
+    width: 350px;  
 }
 
 /* About Sectoin ================================================================= */
@@ -495,7 +496,7 @@ h3.my-profession {
 
 }
 
-.about .about-content .education {     /* Check this part ================     */
+.about .about-content .education {   
     flex: 0 0 50%;
     max-width: 45%;
     margin-top: 30px;
@@ -729,14 +730,14 @@ h3.my-profession {
     font-weight: 400;
 }
 
-/* Contact Form */
+/* Contact Form  ===================================================== */
 
 .contact .contact-form {
     flex: 0 0 100%;
     max-width: 100%;
 }
 
-.contact .contact-form .col-6a { /* Problem ??????????????????????????????*/
+.contact .contact-form .col-6a { 
     /* flex: 0 0 45%;
     width: 50%; */
     display: inline-block;
@@ -785,6 +786,15 @@ h3.my-profession {
 .contact .contact-form .btn {
     height: 50px;
     padding: 0 50px;
+}
+
+.contact .message {
+    color: var(--skin-color);
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: -50px;
+    display: block;
+    margin-left: 30px;
 }
 
 @media (max-width: 1199px) {
