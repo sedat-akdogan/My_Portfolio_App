@@ -105,3 +105,25 @@ function asideSectionTogglerBtn()
         allSection[i].classList.toggle("open");
     }
 }
+
+
+// Contact form submission
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzgxY7wkd2C4gHXn1XtlPuw9_sGBYphen93XdS4LzXbM8bi_s7y5yeTwi68e1ubR20Fgg/exec';
+const form = document.forms['submit-to-google-sheet'];
+const message = document.querySelector(".message");
+
+form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+        message.innerHTML = "Your message sent successfully!";
+        
+        setTimeout(function() {
+            message.innerHTML = "";
+            console.log(response);
+        }, 3000);
+        form.reset();
+    })
+    .catch(error => console.error('Error!', error.message))
+})
