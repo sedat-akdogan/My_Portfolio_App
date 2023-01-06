@@ -134,3 +134,11 @@ form.addEventListener('submit', e => {
 const tablinks = document.getElementsByClassName("tab-links");
 const tabcontents = document.getElementsByClassName("tab-contents");
 
+function opentab(tabname) {
+    for(tablink of tablinks) {
+        tablink.classList.remoce("active-link");
+    }
+    for(tabcontent of tabcontents) {
+        tabcontent.classList.remoce("active-link");
+    }
+}
