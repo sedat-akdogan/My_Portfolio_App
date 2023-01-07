@@ -642,6 +642,14 @@ h3.my-profession {
     color: var(--text-black-900);
     font-weight: 700;
     text-transform: capitalize;
+    cursor: pointer;
+}
+
+.service .service-item .service-item-inner h4:hover {
+    background-color: var(--skin-color);
+    opacity: 0.7;
+    color: white;
+    border-radius: 20px;
 }
 
 .service .service-item .service-item-inner p {
@@ -651,7 +659,7 @@ h3.my-profession {
 }
 
 /* new styling >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-
+/* 
 .service .tab-contents {
     display: none;
 }
@@ -661,7 +669,7 @@ h3.my-profession {
     margin-bottom: 30px;
     flex: 0 0 100%;
     max-width: 100%;
-}
+} */
 
 /* new styling >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
