@@ -64,29 +64,22 @@ function showSection(element)
 
 // update Nav function
 
-function updateNav(element)
+function updateNav()
 {
-    for(let i=0; i<totalNavList.length; i++)
-    {
-        navList[i].querySelector("a").classList.remove("active");
-        const target = element.getAttribute("href").split("#")[1];
-        if(target === navList[i].querySelector("a").getAttribute("href").split("#")[1])
-        {
-            navList[i].querySelector("a").classList.add("active");
-        }
-    }
+    navList[1].querySelector("a").classList.remove("active");
+    navList[4].querySelector("a").classList.add("active");
 }
 
 // nav toggler button
 
-document.querySelector(".hire-me").addEventListener("click", function()
+document.querySelector(".hire-me").addEventListener("click", function(e)
 {
-    const sectionIndex = this.getAttribute(data-section-index);
-    showSection(this);
-    updateNav(this);
+    showSection(e.target);
+    updateNav();
     removeBackSection();
-    addBackSection(sectionIndex);
+    addBackSection(1);
 });
+
 
 // aside toogler button
 
