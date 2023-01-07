@@ -129,18 +129,33 @@ form.addEventListener('submit', e => {
 })
 
 
-// projects active content
+// Projects Sectoin display
 
-const tablinks = document.getElementsByClassName("tab-links");
-const tabcontents = document.getElementsByClassName("tab-contents");
+const htmlBtn = document.querySelector("#htmlCss-btn");
+const jsBtn = document.querySelector("#js-btn");
+const reactBtn = document.querySelector("#react-btn");
 
-function opentab(tabname) {
-    for(tablink of tablinks) {
-        tablink.classList.remoce("active-link");
-    }
-    for(tabcontent of tabcontents) {
-        tabcontent.classList.remoce("active-tab");
-    }
-    event.currentTarget.classList.add("active-link");
-    document.getElementById(tabname).classList.add("active-tab");
-} 
+const htmlDiv = document.querySelector("#htmlCss");
+const jsDiv = document.querySelector("#js");
+const reactDiv = document.querySelector("#react");
+
+htmlDiv.style.display = "none";
+jsDiv.style.display = "none";
+
+htmlBtn.addEventListener("click", () => {
+    htmlDiv.style.display = "block";
+    jsDiv.style.display = "none";
+    reactDiv.style.display = "none";
+})
+
+jsBtn.addEventListener("click", () => {
+    htmlDiv.style.display = "none";
+    jsDiv.style.display = "block";
+    reactDiv.style.display = "none";
+})
+
+reactBtn.addEventListener("click", () => {
+    htmlDiv.style.display = "none";
+    jsDiv.style.display = "none";
+    reactDiv.style.display = "block";
+})
