@@ -84,7 +84,7 @@ ul {
 }
 
 .container {
-    max-width: 1500px;
+    max-width: 1400px;
     width: 100%;
     margin: auto;
 }
@@ -374,7 +374,6 @@ h3.my-profession {
     right: -20px;
     bottom: -40px;
 }
-/* check this section later  ----------===============----------------===============*/
 
 .home .home-img img {
     margin: auto;
@@ -648,13 +647,6 @@ h3.my-profession {
     cursor: pointer;
 }
 
-/* .service .service-item .service-item-inner h4:hover {
-    background-color: var(--skin-color);
-    opacity: 0.7;
-    color: white;
-    border-radius: 20px;
-} */
-
 .service .service-item .service-item-inner p {
     font-size: 16px;
     color: var(--text-black-700);
@@ -666,10 +658,9 @@ h3.my-profession {
     display: flex;
     flex-wrap: wrap;
 }
+
 .card1 {
     display: none;
-    /* height: 0px;
-    width: 0px; */
     position: absolute;
     top: 50%;
     left: 30%;
@@ -681,7 +672,6 @@ h3.my-profession {
     display: block;
 
 }
-
 /* new styling >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 /* Blog App Section ====================================================== */
