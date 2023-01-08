@@ -84,7 +84,7 @@ ul {
 }
 
 .container {
-    max-width: 1100px;
+    max-width: 1500px;
     width: 100%;
     margin: auto;
 }
@@ -593,16 +593,18 @@ h3.my-profession {
 
 .service .service-item {
     margin-bottom: 30px;
-    flex: 0 0 33.33%;
-    max-width: 30%;
+    flex: 30%;
+    min-width: 30%;
 }
 
 .service .service-item .service-item-inner {
+    position: relative;
     background-color: var(--bg-black-100);
     border: 1px solid var(--bg-black-50);
     border-radius: 10px;
+    height: 200px;
     padding: 30px 15px;
-    text-align: center;
+    /* text-align: ; */
     transition: all 0.3s ease;
 }
 
@@ -610,7 +612,7 @@ h3.my-profession {
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.25);
 }
 
-.service .service-item .service-item-inner .icon {
+.service .service-item-inner .icon {
     height: 60px;
     width: 60px;
     border-radius: 50%;
@@ -641,16 +643,17 @@ h3.my-profession {
     margin-bottom: 15px;
     color: var(--text-black-900);
     font-weight: 700;
+    text-align: center;
     text-transform: capitalize;
     cursor: pointer;
 }
 
-.service .service-item .service-item-inner h4:hover {
+/* .service .service-item .service-item-inner h4:hover {
     background-color: var(--skin-color);
     opacity: 0.7;
     color: white;
     border-radius: 20px;
-}
+} */
 
 .service .service-item .service-item-inner p {
     font-size: 16px;
@@ -659,6 +662,26 @@ h3.my-profession {
 }
 
 /* new styling >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card1 {
+    display: none;
+    /* height: 0px;
+    width: 0px; */
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    text-align: center;
+
+}
+
+
+.service-item-inner:hover .card1{
+    display: block;
+
+}
 
 /* new styling >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
