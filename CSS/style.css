@@ -603,6 +603,7 @@ h3.my-profession {
     border-radius: 10px;
     height: 200px;
     padding: 30px 15px;
+    width: 25rem;
     /* text-align: ; */
     transition: all 0.3s ease;
 }
@@ -640,7 +641,7 @@ h3.my-profession {
 .service .service-item .service-item-inner h4 {
     font-size: 18px;
     margin-bottom: 15px;
-    color: var(--text-black-900);
+    /* color: var(--text-black-900); */
     font-weight: 700;
     text-align: center;
     text-transform: capitalize;
@@ -649,8 +650,25 @@ h3.my-profession {
 
 .service .service-item .service-item-inner p {
     font-size: 16px;
-    color: var(--text-black-700);
+    /* color: var(--text-black-700); */
     line-height: 25px;
+}
+
+.service .service-item-inner .card1 {
+    /* width: 20rem;
+    height: 10rem; */
+    background-color: #151515;
+    color: white;
+    padding: 2rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.service .service-item .service-item-inner:hover .card1{
+    display: block;
 }
 
 /* new styling >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -659,19 +677,6 @@ h3.my-profession {
     flex-wrap: wrap;
 }
 
-.card1 {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 30%;
-    text-align: center;
-
-}
-
-.service-item-inner:hover .card1{
-    display: block;
-
-}
 /* new styling >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 /* Blog App Section ====================================================== */
