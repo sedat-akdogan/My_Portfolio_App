@@ -677,6 +677,10 @@ h3.my-profession {
     flex-wrap: wrap;
 }
 
+.cursor:hover {
+    cursor: pointer;
+}
+
 /* new styling >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 /* Blog App Section ====================================================== */
