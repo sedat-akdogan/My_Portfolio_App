@@ -865,6 +865,12 @@ h3.my-profession {
     }
 }
 
+@media (max-width: 1024px) {
+    .home .home-img{
+        display: none;
+    }
+}
+
 @media (max-width: 990px) {
     .contact .contact-info-item,
     .portfolio .portfolio-item,
@@ -875,9 +881,6 @@ h3.my-profession {
     .home .home-info{
         flex: 0 0 100%;
         max-width: 100%;
-    }
-    .home .home-img{
-        display: none;
     }
 }
 
