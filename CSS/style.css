@@ -79,7 +79,7 @@ ul {
 }
 
 .padd-15 {
-    padding-left: 15px;
+    padding-left: 0px;
     padding-right: 15px;
 }
 
@@ -863,7 +863,6 @@ h3.my-profession {
         display: block;
         margin-left: 0;
     }
-
 }
 
 @media (max-width: 990px) {
@@ -882,7 +881,7 @@ h3.my-profession {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .contact .contact-form .col-6a, 
     .contact .contact-form .col-6b, 
     .contact .contact-info-item, 
