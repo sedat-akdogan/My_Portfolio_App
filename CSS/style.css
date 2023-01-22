@@ -899,3 +899,11 @@ h3.my-profession {
         max-width: 100%;
     }
 }
+
+@media (max-width: 425px){
+    .service-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+        justify-content: flex-end;
+    }
+}
