@@ -152,3 +152,10 @@ reactBtn.addEventListener("click", () => {
     jsDiv.style.display = "none";
     reactDiv.style.display = "block";
 })
+
+
+// Visitor counter
+
+function websiteVisits(response) {
+    document.querySelector("#visits").textContent = response.value;
+}
