@@ -305,6 +305,28 @@ ul {
     margin-right: 15px;
 }
 
+.aside {
+    margin: 0;
+    background: linear-gradient(-90deg, #f19579, #e778a3, #3eb0da, #4cd7b7);
+    background-size: 400% 400%;
+    animation: gradient 20s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 /* Home Section ==========================================================*/
 .home {
     min-height: 100vh;
