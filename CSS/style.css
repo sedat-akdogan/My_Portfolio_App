@@ -679,7 +679,7 @@ h3.my-profession {
 }
 
 .service .service-item .service-item-inner:hover {
-    box-shadow: 0 0 20px rgba(48, 46, 77, 0.25);
+    box-shadow: 0 0 20px rgba(5, 30, 62, 0.25);
 }
 
 .service .service-item-inner .icon {
@@ -750,6 +750,7 @@ h3.my-profession {
 .cursor:hover {
     cursor: pointer;
 }
+
 
 /* new styling >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
