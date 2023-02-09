@@ -84,7 +84,7 @@ ul {
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 1600px;
     width: 100%;
     margin: auto;
 }
@@ -135,7 +135,7 @@ ul {
     /* margin-left: -15px;
     margin-right: -15px; */
     position: relative;
-    margin-bottom: 60px;  /* Check this lateeeeeeeeeeeeeeeeeeeeeeeer */
+    margin-bottom: 60px;
 }
 
 .btn {
@@ -405,40 +405,44 @@ h3.my-profession {
     width: 350px;  
 }
 
+/* =============== new part ================== */
 .home-bottom {
-    /* background-color: #4cd7b7; */
+    margin-top: 10%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.home-bottom .visit {
-    flex: 0 0 50%;
-    max-width: 45%;
-    margin-top: 30px;
+.icon-names ul {
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
 }
 
-.home-bottom .icons-names {
-    flex: 0 0 50%;
-    max-width: 45%;
-    margin-top: 30px;
+.icon-names ul li {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 100px;
+    margin-top: 15%;
 }
 
-.icons-names .icons li {
-    display: flex;
-    margin-left: 20px;
-    margin-right: 20px;
-}
+.icon-names ul li:hover{
+    scale: 1.2;
+    transition-duration: 0.7s;
+} 
 
 .visit {
-    /* background-color: #3eb0da; */
-    margin-top: 200px;
+    margin-top: 10%;
     width: 400px;
     font-family: 'Clicker Script', cursive;
     font-size: 22px;
     font-weight: 700;
     color: var(--text-black-900);
-    margin-left: 2%;
+    margin-left: 0;
     text-align: center;
 }
 
