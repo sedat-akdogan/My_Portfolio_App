@@ -107,13 +107,13 @@ ul {
     position: relative;
 }
 
-.section-title h2::before {
+/* .section-title h2::before {
     content: '';
     height: 4px;
     width: 50px;
     background-color: var(--skin-color);
     position: absolute;
-    top: 100%;
+    top: 10%;
     left: 15px;                      
 }
 
@@ -123,10 +123,10 @@ ul {
     width: 25px;
     background-color: var(--skin-color);
     position: absolute;
-    top: 100%;
+    top: 10%;
     left: 15px;                    
     margin-top: 8px;
-}
+} */
 
 .row {
     display: flex;
@@ -907,6 +907,45 @@ h3.my-profession {
     margin-left: 30px;
 }
 
+.contact {
+    margin: 0;
+    background: linear-gradient(-45deg, #f19579, #e778a3, #3eb0da, #4cd7b7);
+    background-size: 400% 400%;
+    animation: gradient 20s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.last {
+    display: flex;
+}
+
+.social-links {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 200px;
+    
+}
+
+.send-message {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 200px;
+}
+
 @media (max-width: 1199px) {
     .section .container{
         padding-top: 70px;
@@ -952,6 +991,21 @@ h3.my-profession {
     .home .home-info{
         flex: 0 0 100%;
         max-width: 100%;
+    }
+}
+
+@media (max-width: 767px){
+    .last{
+        display: block;
+        margin: auto;
+    }
+    .social-links{
+        display: block;
+        margin: auto;
+    }
+    .send-message{
+        display: block;
+        margin: auto;
     }
 }
 
