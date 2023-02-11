@@ -416,8 +416,10 @@ h3.my-profession {
 .icon-names ul {
     list-style-type: none;
     margin: 0%;
+    margin-left: 40px;
     padding: 0%;
     overflow: hidden;
+    margin-top: 14%;
 }
 
 .icon-names ul li {
@@ -426,13 +428,13 @@ h3.my-profession {
     text-align: center;
     padding: 10px;
     text-decoration: none;
-    font-size: 100px;
-    margin-top: 15%;
+    font-size: 90px;
+    margin: 0;
 }
 
 .icon-names ul li:hover{
     scale: 1.2;
-    transition-duration: 0.7s;
+    transition: all 0.7s;
 } 
 
 .visit {
@@ -711,7 +713,7 @@ h3.my-profession {
 .service .service-item .service-item-inner h4 {
     font-size: 18px;
     margin-bottom: 15px;
-    /* color: var(--text-black-900); */
+    color: var(--text-black-900);
     font-weight: 700;
     text-align: center;
     text-transform: capitalize;
@@ -720,7 +722,7 @@ h3.my-profession {
 
 .service .service-item .service-item-inner p {
     font-size: 16px;
-    /* color: var(--text-black-700); */
+    color: var(--text-black-700);
     line-height: 25px;
 }
 
@@ -769,6 +771,10 @@ h3.my-profession {
 .portfolio .portfolio-heading h2 {
     color: var(--text-black-900);
     font-weight: 500;
+}
+
+.black-heading {
+    color: var(--text-black-900);
 }
 
 .portfolio .portfolio-item {
@@ -940,11 +946,18 @@ h3.my-profession {
     
 }
 
+.links-design {
+    display: flex;
+    justify-content: center;
+}
+
 .send-message {
     flex: 0 0 50%;
     max-width: 50%;
     margin-top: 200px;
 }
+
+/* Responsive Section ================================================== */
 
 @media (max-width: 1199px) {
     .section .container{
@@ -975,7 +988,7 @@ h3.my-profession {
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1400px) {
     .home .home-img{
         display: none;
     }
