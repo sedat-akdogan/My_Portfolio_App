@@ -774,7 +774,7 @@ h3.my-profession {
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev1, .next1 {
     cursor: pointer;
     position: absolute;
     top: 40%;
@@ -790,13 +790,13 @@ h3.my-profession {
 }
 
 /* Position the "next button" to the right */
-.next {
+.next1 {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+.prev1:hover, .next1:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -817,7 +817,7 @@ h3.my-profession {
     color: white;
 }
 
-.row:after {
+.row1:after {
     content: "";
     display: table;
     clear: both;
