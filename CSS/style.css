@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+
 :root {
     --bg-black-900: #f2f2fc;
     --bg-black-100: #fdf9ff;
@@ -41,7 +42,7 @@ ul {
 .section {
     background: var(--bg-black-900);
     min-height: 100vh;
-    display: block; 
+    display: block;
     padding: 0 30px;
     opacity: 1;
     position: fixed;
@@ -49,10 +50,10 @@ ul {
     top: 0;
     right: 0;
     bottom: 0;
-    z-index: 0; 
+    z-index: 0;
     overflow-y: auto;
     overflow-x: auto;
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
 }
 
 .section.back-section {
@@ -66,10 +67,11 @@ ul {
 }
 
 @keyframes slideSection {
-    0%{
+    0% {
         transform: translateX(100%);
     }
-    100%{
+
+    100% {
         transform: translateX(0%);
     }
 }
@@ -175,7 +177,7 @@ ul {
     align-items: center;
     z-index: 10;
     transition: all 0.3s ease;
-} 
+}
 
 .aside .logo {
     position: absolute;
@@ -367,7 +369,7 @@ h3.my-profession {
 }
 
 .home .home-img {
-    flex: 0 0 30%; 
+    flex: 0 0 30%;
     max-width: 40%;
     /* width: 50px;
     height: 100px; */
@@ -401,8 +403,8 @@ h3.my-profession {
 .home .home-img img {
     margin: auto;
     border-radius: 10%;
-    height: 400px; 
-    width: 350px;  
+    height: 400px;
+    width: 350px;
 }
 
 /* =============== new part ================== */
@@ -432,10 +434,10 @@ h3.my-profession {
     margin: 0;
 }
 
-.icon-names ul li:hover{
+.icon-names ul li:hover {
     scale: 1.2;
     transition: all 0.7s;
-} 
+}
 
 .visit {
     margin-top: 10%;
@@ -485,11 +487,11 @@ h3.my-profession {
 
 .about .about-content .personal-info {
     flex: 0 0 50%;
-    max-width: 45%; 
+    max-width: 45%;
     margin-top: 40px;
 }
 
-.about .about-content .personal-info .info-item{
+.about .about-content .personal-info .info-item {
     flex: 0 0 45%;
     max-width: 45%;
 }
@@ -522,7 +524,7 @@ h3.my-profession {
 
 .about .about-content .skills {
     flex: 0 0 50%;
-    max-width: 45%;   
+    max-width: 45%;
     margin-top: 40px;
 }
 
@@ -567,7 +569,7 @@ h3.my-profession {
 
 }
 
-.about .about-content .education {   
+.about .about-content .education {
     flex: 0 0 50%;
     max-width: 45%;
     margin-top: 30px;
@@ -592,7 +594,7 @@ h3.my-profession {
 }
 
 .about .about-content .timeline {
-    background-color: var(--bg-black-100); 
+    background-color: var(--bg-black-100);
     padding: 30px 15px;
     border: 1px solid var(--bg-black-50);
     border-radius: 10px;
@@ -654,7 +656,7 @@ h3.my-profession {
     font-size: 16px;
     text-align: justify;
     color: var(--text-black-700);
-} 
+}
 
 /* Projects Section ===================================================================== */
 
@@ -739,7 +741,7 @@ h3.my-profession {
     display: none;
 }
 
-.service .service-item .service-item-inner:hover .card1{
+.service .service-item .service-item-inner:hover .card1 {
     display: block;
 }
 
@@ -753,11 +755,92 @@ h3.my-profession {
     cursor: pointer;
 }
 
-
 /* new styling >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
-/* Blog App Section ====================================================== */
+/* My Galaxy Section */
+/* Position the image container (needed to position the left and right arrows) */
+.container1 {
+    position: relative;
+}
 
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+
+.active, .demo:hover {
+    opacity: 1;
+}
+
+
+/* Blog App Section ====================================================== */
+/* 
 .portfolio .container {
     padding-bottom: 40px;
 }
@@ -791,7 +874,7 @@ h3.my-profession {
 .portfolio .portfolio-item-inner .portfolio-img img {
     width: 100%;
     display: block;
-}
+} */
 
 /* .portfolio .button {
     margin-bottom: 40px;
@@ -853,7 +936,7 @@ h3.my-profession {
     max-width: 100%;
 }
 
-.contact .contact-form .col-6a { 
+.contact .contact-form .col-6a {
     /* flex: 0 0 45%;
     width: 50%; */
     display: inline-block;
@@ -943,7 +1026,7 @@ h3.my-profession {
     flex: 0 0 50%;
     max-width: 50%;
     margin-top: 200px;
-    
+
 }
 
 .links-design {
@@ -960,84 +1043,96 @@ h3.my-profession {
 /* Responsive Section ================================================== */
 
 @media (max-width: 1199px) {
-    .section .container{
+    .section .container {
         padding-top: 70px;
     }
-    .aside{
+
+    .aside {
         left: -270px;
     }
-    .aside.open{
+
+    .aside.open {
         left: 0;
     }
-    .aside .nav-toggler{
+
+    .aside .nav-toggler {
         display: flex;
         left: 30px;
     }
-    .aside .nav-toggler.open{
+
+    .aside .nav-toggler.open {
         left: 300px;
     }
+
     .section {
         left: 0;
     }
-    .section.open{
+
+    .section.open {
         left: 270px;
     }
-    .about .about-content .personal-info .info-item p span{
+
+    .about .about-content .personal-info .info-item p span {
         display: block;
         margin-left: 0;
     }
 }
 
 @media (max-width: 1400px) {
-    .home .home-img{
+    .home .home-img {
         display: none;
     }
 }
 
 @media (max-width: 990px) {
+
     .contact .contact-info-item,
     .portfolio .portfolio-item,
-    .service .service-item{
+    .service .service-item {
         flex: 0 0 50%;
         max-width: 50%;
     }
-    .home .home-info{
+
+    .home .home-info {
         flex: 0 0 100%;
         max-width: 100%;
     }
 }
 
-@media (max-width: 767px){
-    .last{
+@media (max-width: 767px) {
+    .last {
         display: block;
         margin: auto;
     }
-    .social-links{
+
+    .social-links {
         display: block;
         margin: auto;
     }
-    .send-message{
+
+    .send-message {
         display: block;
         margin: auto;
     }
 }
 
 @media (max-width: 768px) {
-    .contact .contact-form .col-6a, 
-    .contact .contact-form .col-6b, 
-    .contact .contact-info-item, 
+
+    .contact .contact-form .col-6a,
+    .contact .contact-form .col-6b,
+    .contact .contact-info-item,
     .portfolio .portfolio-item,
     .service .service-item,
     .about .about-content .experience,
     .about .about-content .education,
-    .about .about-content .skills, 
-    .about .about-content .personal-info{
+    .about .about-content .skills,
+    .about .about-content .personal-info {
         flex: 0 0 100%;
         max-width: 100%;
     }
 }
 
-@media (max-width: 425px){
+@media (max-width: 425px) {
     .service-item {
         flex: 0 0 100%;
         max-width: 100%;
