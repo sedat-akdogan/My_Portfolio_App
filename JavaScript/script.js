@@ -13,49 +13,39 @@ var Typed = new Typed('.typing', {
 
 const nav = document.querySelector(".nav");
 navList = nav.querySelectorAll("li"),
-totalNavList = navList.length,
-allSection = document.querySelectorAll(".section"),
-totalSection = allSection.length;
-for(let i=0; i<totalNavList; i++)
-{
+    totalNavList = navList.length,
+    allSection = document.querySelectorAll(".section"),
+    totalSection = allSection.length;
+for (let i = 0; i < totalNavList; i++) {
     const a = navList[i].querySelector("a");
-    a.addEventListener("click",function()
-    {
+    a.addEventListener("click", function () {
         removeBackSection();
-        for(let j=0; j<totalNavList; j++)
-        {
-            if(navList[j].querySelector("a").classList.contains("active"))
-            {
+        for (let j = 0; j < totalNavList; j++) {
+            if (navList[j].querySelector("a").classList.contains("active")) {
                 addBackSection(j);
             }
             navList[j].querySelector("a").classList.remove("active");
-        }   
+        }
         this.classList.add("active");
         showSection(this);
-        if(window.innerWidth < 1200)
-        {
+        if (window.innerWidth < 1200) {
             asideSectionTogglerBtn();
         }
     })
 }
 
-function removeBackSection()
-{
-    for(let i=0; i<totalSection; i++)
-    {
+function removeBackSection() {
+    for (let i = 0; i < totalSection; i++) {
         allSection[i].classList.remove("back-section");
     }
 }
 
-function addBackSection(num)
-{
+function addBackSection(num) {
     allSection[num].classList.add("back-section");
 }
 
-function showSection(element)
-{
-    for(let i=0; i<totalSection; i++)
-    {
+function showSection(element) {
+    for (let i = 0; i < totalSection; i++) {
         allSection[i].classList.remove("active");
     }
     const target = element.getAttribute("href").split("#")[1];
@@ -64,16 +54,14 @@ function showSection(element)
 
 // update Nav function
 
-function updateNav()
-{
+function updateNav() {
     navList[1].querySelector("a").classList.remove("active");
     navList[4].querySelector("a").classList.add("active");
 }
 
 // nav toggler button
 
-document.querySelector(".hire-me").addEventListener("click", function(e)
-{
+document.querySelector(".hire-me").addEventListener("click", function (e) {
     showSection(e.target);
     updateNav();
     removeBackSection();
@@ -89,12 +77,10 @@ navTogglerBtn.addEventListener("click", () => {
     asideSectionTogglerBtn();
 })
 
-function asideSectionTogglerBtn()
-{
+function asideSectionTogglerBtn() {
     aside.classList.toggle("open");
     navTogglerBtn.classList.toggle("open");
-    for(let i=0; i<totalSection; i++)
-    {
+    for (let i = 0; i < totalSection; i++) {
         allSection[i].classList.toggle("open");
     }
 }
@@ -108,17 +94,17 @@ const message = document.querySelector(".message");
 
 form.addEventListener('submit', e => {
     e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(response => {
-        message.innerHTML = "Your message sent successfully!";
-        
-        setTimeout(function() {
-            message.innerHTML = "";
-            console.log(response);
-        }, 3000);
-        form.reset();
-    })
-    .catch(error => console.error('Error!', error.message))
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+            message.innerHTML = "Your message sent successfully!";
+
+            setTimeout(function () {
+                message.innerHTML = "";
+                console.log(response);
+            }, 3000);
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
 })
 
 
@@ -158,4 +144,37 @@ reactBtn.addEventListener("click", () => {
 
 function websiteVisits(response) {
     document.querySelector("#visits").textContent = response.value;
+}
+
+
+// My certificates slide show section
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("demo");
+    let captionText = document.getElementById("caption");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+    captionText.innerHTML = dots[slideIndex - 1].alt;
 }
