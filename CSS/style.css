@@ -757,10 +757,19 @@ h3.my-profession {
 
 /* new styling >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
+/* ==================================================================== */
+
 /* My Galaxy Section */
 /* Position the image container (needed to position the left and right arrows) */
 .container1 {
     position: relative;
+    margin-bottom: 60px;
+}
+
+.photoes1 {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 /* Hide the images by default */
@@ -777,7 +786,7 @@ h3.my-profession {
 .prev1, .next1 {
     cursor: pointer;
     position: absolute;
-    top: 40%;
+    top: 50%;
     width: auto;
     padding: 16px;
     margin-top: -50px;
@@ -790,14 +799,22 @@ h3.my-profession {
 }
 
 /* Position the "next button" to the right */
-.next1 {
-    right: 0;
+.prev1 {
+    left: 4%;
     border-radius: 3px 0 0 3px;
+    color: rgb(29, 31, 37);
+}
+
+.next1 {
+    right: 4%;
+    border-radius: 3px 0 0 3px;
+    color: rgb(29, 31, 37);
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev1:hover, .next1:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: var(--skin-color);
+    border-radius: 5px;
 }
 
 /* Number text (1/3 etc) */
@@ -811,13 +828,27 @@ h3.my-profession {
 
 /* Container for image text */
 .caption-container {
+    height: 50px;
     text-align: center;
-    background-color: #222;
-    padding: 2px 16px;
-    color: white;
+    background-color: rgb(29, 31, 37);
+    padding: 10px 16px;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
-.row1:after {
+#caption {
+    color: var(--skin-color);
+    text-align: center;
+    position: relative;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.small-list {
+    display: flex;
+}
+
+.small-list:after {
     content: "";
     display: table;
     clear: both;
@@ -831,7 +862,7 @@ h3.my-profession {
 
 /* Add a transparency effect for thumnbail images */
 .demo {
-    opacity: 0.6;
+    opacity: 0.4;
 }
 
 .active, .demo:hover {
