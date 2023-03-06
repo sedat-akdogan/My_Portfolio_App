@@ -777,6 +777,11 @@ h3.my-profession {
     display: none;
 }
 
+.mySlides img {
+    border: 5px solid var(--skin-color);
+    border-radius: 10px;
+}
+
 /* Add a pointer when hovering over the thumbnail images */
 .cursor {
     cursor: pointer;
@@ -877,9 +882,15 @@ h3.my-profession {
     margin: auto;
 }
 
+.mySlides2 img {
+    border: 5px solid var(--skin-color);
+    border-radius: 10px;
+}
+
 /* Hide the images by default */
 .mySlides2 {
     display: none;
+    text-align: center;
 }
 
 /* Fading animation */
