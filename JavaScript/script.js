@@ -146,6 +146,7 @@ function websiteVisits(response) {
     document.querySelector("#visits").textContent = response.value;
 }
 
+// ==================================================================
 
 // My certificates slide show section
 let slideIndex = 1;
@@ -177,4 +178,20 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
     captionText.innerHTML = dots[slideIndex - 1].alt;
+}
+
+// Photo Slides section
+let slideIndex2 = 0;
+showSlides2();
+
+function showSlides2() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides2");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex2++;
+    if (slideIndex2 > slides.length) { slideIndex2 = 1 }
+    slides[slideIndex2 - 1].style.display = "block";
+    setTimeout(showSlides2, 2000); // Change image every 2 seconds
 }
