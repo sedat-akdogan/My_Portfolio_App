@@ -872,7 +872,7 @@ h3.my-profession {
 /* Photo slide section           ===========       */
 /* Slideshow container */
 .slideshow-container {
-    max-width: 1000px;
+    /* max-width: 1400px; */
     position: relative;
     margin: auto;
 }
