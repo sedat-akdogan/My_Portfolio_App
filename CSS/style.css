@@ -909,6 +909,15 @@ h3.my-profession {
     }
 }
 
+.video {
+    display: flex;
+    border: 5px solid var(--skin-color);
+    border-radius: 10px;
+    margin: 5px;
+}
+
+
+
 
 /* Blog App Section ====================================================== */
 /* 
