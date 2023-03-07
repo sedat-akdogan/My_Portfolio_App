@@ -925,11 +925,11 @@ prjcts-galaxy {
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 20px;
+    color: var(--text-black-900);
 }
 
 .gala-list span {
     font-style: italic;
-    color: var(--skin-color);
 }
 
 .music {
