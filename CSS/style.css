@@ -763,7 +763,7 @@ h3.my-profession {
 /* Position the image container (needed to position the left and right arrows) */
 .container1 {
     position: relative;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .photoes1 {
@@ -778,7 +778,7 @@ h3.my-profession {
 }
 
 .mySlides img {
-    border: 5px solid var(--skin-color);
+    border: 2px solid var(--skin-color);
     border-radius: 10px;
 }
 
@@ -879,11 +879,12 @@ h3.my-profession {
 .slideshow-container {
     /* max-width: 1400px; */
     position: relative;
-    margin: auto;
+    /* margin: auto; */
+    margin-bottom: 60px;
 }
 
 .mySlides2 img {
-    border: 5px solid var(--skin-color);
+    border: 2px solid var(--skin-color);
     border-radius: 10px;
 }
 
@@ -909,15 +910,31 @@ h3.my-profession {
     }
 }
 
+prjcts-galaxy {
+    margin-bottom: 40px;
+}
+
 .video {
     display: flex;
-    border: 5px solid var(--skin-color);
+    border: 2px solid var(--skin-color);
     border-radius: 10px;
     margin: 5px;
 }
 
+.gala-list {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
 
+.gala-list span {
+    font-style: italic;
+    color: var(--skin-color);
+}
 
+.music {
+    margin-bottom: 60px;
+}
 
 /* Blog App Section ====================================================== */
 /* 
