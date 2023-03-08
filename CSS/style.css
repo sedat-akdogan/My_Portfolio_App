@@ -833,6 +833,7 @@ h3.my-profession {
 
 /* Container for image text */
 .caption-container {
+    flex: 0 0 auto;
     height: 50px;
     text-align: center;
     background-color: rgb(29, 31, 37);
@@ -915,7 +916,8 @@ prjcts-galaxy {
 }
 
 .video {
-    display: flex;
+    flex: 0 0 50%;
+    max-width: 45%;
     border: 2px solid var(--skin-color);
     border-radius: 10px;
     margin: 5px;
@@ -930,6 +932,7 @@ prjcts-galaxy {
 
 .gala-list span {
     font-style: italic;
+    color: var(--skin-color);
 }
 
 .music {
